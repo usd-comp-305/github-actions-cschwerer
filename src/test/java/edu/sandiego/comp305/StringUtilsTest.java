@@ -26,5 +26,15 @@ public class StringUtilsTest {
         assertEquals("food", StringUtils.reverseString("doof"));
     }
 
+    @Test
+    void reversePalindrome() {
+        assertEquals("racecar", StringUtils.reverseString("racecar"));
+    }
+
+    @Test
+    void reverseSpaces() {
+        assertEquals("doof ymmuy", StringUtils.reverseString("yummy food"));
+    }
+
 
 }

@@ -2,14 +2,14 @@ package edu.sandiego.comp305;
 
 public class StringUtils {
 
-    public static String reverseString(String forwardString) {
-        if (forwardString.isEmpty()) {
-            return forwardString;
-        }
+    private StringUtils() { }
 
-        if (forwardString.length() == 1) {
-            return  forwardString;
+    public static String reverseString(final String forwardString) {
+
+        final StringBuilder result = new StringBuilder();
+        for (int i = forwardString.length() - 1; i >= 0; i--) {
+            result.append(forwardString.charAt(i));
         }
-        return null;
+        return result.toString();
     }
 }
