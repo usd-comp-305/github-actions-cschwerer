@@ -5,7 +5,7 @@ plugins {
     id "com.github.spotbugs" version "5.0.14"
 }
 
-group = 'edu.sandiego.cs.comp305'
+group = 'edu.sandiego.comp305'
 version = '1.0-SNAPSHOT'
 
 repositories {
